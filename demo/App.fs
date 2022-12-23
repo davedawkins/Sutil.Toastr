@@ -1,5 +1,7 @@
 module App
 
+// Copyright (c) 2018 Zaid Ajaj, 2022 David Dawkins
+
 open Sutil
 open Sutil.Toastr
 

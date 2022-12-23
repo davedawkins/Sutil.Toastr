@@ -1,6 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <Description>Sutil wrapper for Toastr</Description>
+    <PackageProjectUrl>https://github.com/davedawkins/Sutil.Toastr</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/davedawkins/Sutil.Toastr</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/davedawkins/Sutil.Toastr/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl></PackageIconUrl>
+    <PackageTags>fsharp;fable</PackageTags>
+    <Authors>David Dawkins</Authors>
+    <Version>1.0.0</Version>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DefineConstants>$(DefineConstants);FABLE_COMPILER;</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Toastr.fs" />

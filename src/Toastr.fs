@@ -1,5 +1,7 @@
 namespace Sutil.Toastr
 
+// Copyright (c) 2018 Zaid Ajaj, 2022 David Dawkins
+
 open Sutil
 open Fable.Core
 open Fable.Core.JsInterop
