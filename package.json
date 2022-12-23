@@ -1,4 +1,7 @@
 {
+  "repository": {
+    "url": "https://github.com/davedawkins/Sutil.Toastr.git"
+  },
   "private": true,
   "scripts": {
     "postinstall": "dotnet tool restore",

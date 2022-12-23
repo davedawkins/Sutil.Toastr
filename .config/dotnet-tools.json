@@ -2,16 +2,16 @@
   "version": 1,
   "isRoot": true,
   "tools": {
-    "fable": {
-      "version": "3.7.20",
-      "commands": [
-        "fable"
-      ]
-    },
     "femto": {
       "version": "0.12.0",
       "commands": [
         "femto"
+      ]
+    },
+    "fable": {
+      "version": "3.7.20",
+      "commands": [
+        "fable"
       ]
     }
   }
