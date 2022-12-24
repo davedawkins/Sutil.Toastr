@@ -12,7 +12,7 @@ let log (x: 'a) : unit = jsNative
 
 type Model = string
 
-let init() = "Elmish.Toastr", Cmd.none
+let init() = "Sutil.Toastr", Cmd.none
 
 type Message =
     | Success
@@ -230,6 +230,7 @@ let view () =
     Html.div [
         Attr.style [ Css.textAlignCenter ]
         Html.h1 [ text "Sutil.Toastr" ]
+        Html.h2 [ text "A port of Elmish.Toastr" ]
 
         Html.button [
             spacing; Attr.className "btn btn-success"; Ev.onClick (fun _ -> dispatch Success)

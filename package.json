@@ -6,9 +6,9 @@
   "scripts": {
     "postinstall": "dotnet tool restore",
     "start": "dotnet fable watch demo --run webpack-dev-server",
-    "build:demo": "dotnet fable demo && webpack",
-    "build": "dotnet fable src && webpack",
-    "publish:package": "dotnet fsi build.fsx --target publish"
+    "build": "dotnet fable demo && webpack",
+    "publish:package": "dotnet fsi build.fsx --target publish",
+    "publish": "node publish.js"
   },
   "devDependencies": {
     "webpack": "^5.75.0",
@@ -19,6 +19,7 @@
   "dependencies": {
     "css-loader": "^0.28.8",
     "fable-publish-utils": "^2.2.0",
+    "gh-pages": "^4.0.0",
     "style-loader": "^0.23.1",
     "toastr": "^2.1.4"
   }
