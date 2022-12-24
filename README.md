@@ -1,6 +1,6 @@
 # Sutil.Toastr [![Nuget](https://img.shields.io/nuget/v/Sutil.Toastr.svg?maxAge=0&colorB=brightgreen)](https://www.nuget.org/packages/Sutil.Toastr)
 
-A Sutil port of Zaid's [Elmish.Toastr](https://github.com/Zaid-Ajaj/Elmish.Toastr)
+A [Sutil](https://sutil.dev) port of Zaid's [Elmish.Toastr](https://github.com/Zaid-Ajaj/Elmish.Toastr)
 
 [Toastr](https://github.com/CodeSeven/toastr) integration with Fable, implemented as Sutil [Elmish](https://github.com/fable-elmish/elmish) commands.
 
