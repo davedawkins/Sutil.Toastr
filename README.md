@@ -1,4 +1,4 @@
-# Sutil.Toastr [![Nuget](https://img.shields.io/nuget/v/Sutil.svg?maxAge=0&colorB=brightgreen)](https://www.nuget.org/packages/Sutil.Toastr)
+# Sutil.Toastr [![Nuget](https://img.shields.io/nuget/v/Sutil.Toastr.svg?maxAge=0&colorB=brightgreen)](https://www.nuget.org/packages/Sutil.Toastr)
 
 A Sutil port of Zaid's [Elmish.Toastr](https://github.com/Zaid-Ajaj/Elmish.Toastr)
 
