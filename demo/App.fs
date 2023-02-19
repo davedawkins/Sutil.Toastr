@@ -273,4 +273,4 @@ let view () =
     ]
 
 
-view() |> Program.mountElement "sutil-app"
+view() |> Program.mount

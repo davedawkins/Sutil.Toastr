@@ -11,6 +11,12 @@
   <ItemGroup>
     <PackageReference Include="Fable.Browser.Dom" Version="2.*" />
     <PackageReference Include="Fable.Core" Version="3.*" />
-    <PackageReference Include="Sutil" Version="1.0.0-*" />
-</ItemGroup>
+    <PackageReference Include="Sutil" Version="2.*" />
+  </ItemGroup>
+  <Target Name="ReallyClean" AfterTargets="Clean">
+    <!-- Remove obj folder -->
+    <RemoveDir Directories="$(BaseIntermediateOutputPath)" />
+    <!-- Remove bin folder -->
+    <RemoveDir Directories="$(BaseOutputPath)" />
+  </Target>
 </Project>
