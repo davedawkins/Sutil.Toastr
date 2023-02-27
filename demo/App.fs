@@ -4,7 +4,6 @@ module App
 
 open Sutil
 open Sutil.Toastr
-
 open Fable.Core
 
 [<Emit("console.log($0)")>]

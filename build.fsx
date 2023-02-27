@@ -42,5 +42,4 @@ Target.create "usage" (fun _ ->
     Console.WriteLine("Targets: publish")
 )
 
-
 Target.runOrDefault "usage"
