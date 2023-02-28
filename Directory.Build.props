@@ -1,0 +1,34 @@
+<Project>
+    <!-- NuGet Metadata -->
+    <PropertyGroup>
+        <PackageProjectUrl>https://github.com/davedawkins/Sutil.Toastr</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/davedawkins/Sutil.Toastr</RepositoryUrl>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageIcon>sutil-logo.png</PackageIcon>
+        <PackageTags>fsharp;fable;f#;javascript;js</PackageTags>
+        <Authors>David Dawkins, Zaid Ajaj</Authors>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+        <!-- For SourceLink. See: https://github.com/dotnet/sourcelink#using-source-link-in-net-projects -->
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="$(MSBuildThisFileDirectory)\sutil-logo.png" Pack="true" Visible="false" PackagePath="" />
+        <None Include="$(MSBuildThisFileDirectory)\LICENSE" Visible="false" Pack="true" PackagePath="" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="*.fsproj; **\*.fs;" PackagePath="fable\" />
+    </ItemGroup>
+    <Target Name="ReallyClean" AfterTargets="Clean">
+        <!-- Remove obj folder -->
+        <RemoveDir Directories="$(BaseIntermediateOutputPath)" />
+        <!-- Remove bin folder -->
+        <RemoveDir Directories="$(BaseOutputPath)" />
+    </Target>
+</Project>

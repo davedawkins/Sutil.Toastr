@@ -1,3 +1,9 @@
+# 1.0.9
+- Copied package configuration detaails from Fable.Promise. Snupkg and SourceLink now identical to that package
+
+# 1.0.8
+- Corrected fsproj with SourceLink
+
 # 1.0.7
 - Enable SourceLink
 
