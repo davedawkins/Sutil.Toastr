@@ -1,3 +1,6 @@
+# 1.0.13
+- Try workaround directly in Directory.Build.props
+
 # 1.0.12
 - Use workaround https://github.com/dotnet/sourcelink/issues/572
 

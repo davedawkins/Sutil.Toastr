@@ -12,7 +12,7 @@
         <!-- For SourceLink. See: https://github.com/dotnet/sourcelink#using-source-link-in-net-projects -->
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
-        <IncludeSymbols>true</IncludeSymbols>
+        <TargetFrameworkMonikerAssemblyAttributesPath>$([System.IO.Path]::Combine('$(IntermediateOutputPath)','$(TargetFrameworkMoniker).AssemblyAttributes$(DefaultLanguageSourceExtension)'))</TargetFrameworkMonikerAssemblyAttributesPath>        <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     </PropertyGroup>
     <ItemGroup>
@@ -20,6 +20,7 @@
         <None Include="$(MSBuildThisFileDirectory)\LICENSE" Visible="false" Pack="true" PackagePath="" />
     </ItemGroup>
     <ItemGroup>
+        <EmbeddedFiles Include="$(GeneratedAssemblyInfoFile)"/>
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
     </ItemGroup>
 </Project>
