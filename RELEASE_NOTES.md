@@ -1,5 +1,8 @@
+# 1.0.14
+- Try .NET 7 SDK to fix untracked sources issue
+
 # 1.0.13
-- Try workaround directly in Directory.Build.props
+- Try <ContinuousIntegration>true</ContinuousIntegration> to fix untracked sources issue
 
 # 1.0.12
 - Use workaround https://github.com/dotnet/sourcelink/issues/572
