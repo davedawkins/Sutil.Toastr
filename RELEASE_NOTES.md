@@ -1,3 +1,6 @@
+# 1.0.10
+- Make sure project clean before publishing package, or SourceLink complains "untracked sources: obj"
+
 # 1.0.9
 - Copied package configuration detaails from Fable.Promise. Snupkg and SourceLink now identical to that package
 
