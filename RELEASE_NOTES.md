@@ -1,3 +1,6 @@
+# 1.0.12
+- Use workaround https://github.com/dotnet/sourcelink/issues/572
+
 # 1.0.11
 - PackagePath="fable" not "fable\", otherwise path in .nupkg is "fable\\Toastr.fs" and this seems to be upsetting SourceLine ("contains untracked sources")
 
