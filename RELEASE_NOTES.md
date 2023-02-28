@@ -1,5 +1,5 @@
 # 1.0.11
-- Include "*.fs" not "**\*.fs", since path in pkg is then "fable\\Toastr.fs" and this seems to be upsetting SourceLine ("contains untracked sources")
+- PackagePath="fable" not "fable\", otherwise path in .nupkg is "fable\\Toastr.fs" and this seems to be upsetting SourceLine ("contains untracked sources")
 
 # 1.0.10
 - Make sure project clean before publishing package, or SourceLink complains "untracked sources: obj"
