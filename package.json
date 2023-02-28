@@ -9,7 +9,7 @@
     "build": "dotnet fable demo && webpack",
     "clean": "dotnet fsi build.fsx --target clean",
     "publish:package": "dotnet fsi build.fsx --target publish:package",
-    "publish": "node publish.js"
+    "pack": "dotnet fsi build.fsx --target pack"
   },
   "devDependencies": {
     "webpack": "^5.75.0",

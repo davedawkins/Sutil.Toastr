@@ -45,12 +45,20 @@ Target.create "publish:package" (fun _ ->
     pushNuget ("src" </> pkg + ".fsproj") [] doNothing
 )
 
+Target.create "pack" (fun _ ->
+    run("dotnet pack -c Release src/Sutil.Toastr.fsproj")
+)
+
 Target.create "usage" (fun _ ->
-    Console.WriteLine("Targets: publish")
+    Console.WriteLine("Targets: publish:package, pack, clean")
 )
 
 "clean"
     ==> "publish:package"
+    |> ignore
+
+"clean"
+    ==> "pack"
     |> ignore
 
 Target.runOrDefault "usage"
