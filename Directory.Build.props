@@ -22,13 +22,4 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
     </ItemGroup>
-    <ItemGroup>
-        <Content Include="*.fsproj; **\*.fs;" PackagePath="fable\" />
-    </ItemGroup>
-    <Target Name="ReallyClean" AfterTargets="Clean">
-        <!-- Remove obj folder -->
-        <RemoveDir Directories="$(BaseIntermediateOutputPath)" />
-        <!-- Remove bin folder -->
-        <RemoveDir Directories="$(BaseOutputPath)" />
-    </Target>
 </Project>

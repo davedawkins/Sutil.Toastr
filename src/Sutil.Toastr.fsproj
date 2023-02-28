@@ -1,15 +1,24 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <Description>Sutil wrapper for Toastr</Description>
-    <Version>1.0.9</Version>
-    <PackageVersion>1.0.9</PackageVersion>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <DefineConstants>$(DefineConstants);FABLE_COMPILER;</DefineConstants>
-  </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="Toastr.fs" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Sutil" Version="2.*" />
+    <PropertyGroup>
+        <Description>Sutil wrapper for Toastr</Description>
+        <Version>1.0.10</Version>
+        <PackageVersion>1.0.10</PackageVersion>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <DefineConstants>$(DefineConstants);FABLE_COMPILER;</DefineConstants>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="Toastr.fs" />
     </ItemGroup>
+    <ItemGroup>
+        <Content Include="*.fsproj; *.fs;" PackagePath="fable\" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Sutil" Version="2.*" />
+    </ItemGroup>
+    <Target Name="ReallyClean" AfterTargets="Clean">
+        <!-- Remove obj folder -->
+        <RemoveDir Directories="$(BaseIntermediateOutputPath)" />
+        <!-- Remove bin folder -->
+        <RemoveDir Directories="$(BaseOutputPath)" />
+    </Target>
 </Project>
