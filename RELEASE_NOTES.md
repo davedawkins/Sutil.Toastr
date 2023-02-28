@@ -1,3 +1,6 @@
+# 1.0.7
+- Enable SourceLink
+
 # 1.0.6
 - Fix some dependencies for Sutil and fable publish utils
 
