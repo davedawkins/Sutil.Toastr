@@ -13,11 +13,6 @@
     <PackageReference Include="Fable.Core" Version="3.*" />
     <PackageReference Include="Sutil" Version="2.*" />
   </ItemGroup>
-  <PropertyGroup>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <DebugType>embedded</DebugType>
-  </PropertyGroup>
   <Target Name="ReallyClean" AfterTargets="Clean">
     <!-- Remove obj folder -->
     <RemoveDir Directories="$(BaseIntermediateOutputPath)" />
