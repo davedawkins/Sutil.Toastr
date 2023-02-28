@@ -10,7 +10,7 @@
         <Compile Include="Toastr.fs" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="*.fsproj; *.fs;" PackagePath="fable\" />
+        <Content Include="*.fsproj; **/*.fs;" PackagePath="fable" />
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Sutil" Version="2.*" />
